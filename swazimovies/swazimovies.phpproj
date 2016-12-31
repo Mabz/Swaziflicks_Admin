@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>swazimovies</Name>
+    <ProjectGuid>fa05305c-c58d-4263-9f73-9d46872bcd49</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>swazimovies</RootNamespace>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+    <AssemblyName>swazimovies</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="cinemas.php" />
+    <Compile Include="movies.php" />
+    <Compile Include="prices.php" />
+    <Compile Include="showings.php" />
+    <Compile Include="_footer.php" />
+    <Compile Include="_header.php" />
+    <Compile Include="index.php" />
+    <Compile Include="src\Parse\Internal\AddOperation.php" />
+    <Compile Include="src\Parse\Internal\AddUniqueOperation.php" />
+    <Compile Include="src\Parse\Internal\DeleteOperation.php" />
+    <Compile Include="src\Parse\Internal\Encodable.php" />
+    <Compile Include="src\Parse\Internal\FieldOperation.php" />
+    <Compile Include="src\Parse\Internal\IncrementOperation.php" />
+    <Compile Include="src\Parse\Internal\ParseRelationOperation.php" />
+    <Compile Include="src\Parse\Internal\RemoveOperation.php" />
+    <Compile Include="src\Parse\Internal\SetOperation.php" />
+    <Compile Include="src\Parse\ParseACL.php" />
+    <Compile Include="src\Parse\ParseAggregateException.php" />
+    <Compile Include="src\Parse\ParseAnalytics.php" />
+    <Compile Include="src\Parse\ParseBytes.php" />
+    <Compile Include="src\Parse\ParseClient.php" />
+    <Compile Include="src\Parse\ParseCloud.php" />
+    <Compile Include="src\Parse\ParseConfig.php" />
+    <Compile Include="src\Parse\ParseException.php" />
+    <Compile Include="src\Parse\ParseFile.php" />
+    <Compile Include="src\Parse\ParseGeoPoint.php" />
+    <Compile Include="src\Parse\ParseInstallation.php" />
+    <Compile Include="src\Parse\ParseMemoryStorage.php" />
+    <Compile Include="src\Parse\ParseObject.php" />
+    <Compile Include="src\Parse\ParsePush.php" />
+    <Compile Include="src\Parse\ParseQuery.php" />
+    <Compile Include="src\Parse\ParseRelation.php" />
+    <Compile Include="src\Parse\ParseRole.php" />
+    <Compile Include="src\Parse\ParseSessionStorage.php" />
+    <Compile Include="src\Parse\ParseStorageInterface.php" />
+    <Compile Include="src\Parse\ParseUser.php" />
+    <Compile Include="_cinemas.php" />
+    <Compile Include="_movies.php" />
+    <Compile Include="_pricingTemplate.php" />
+    <Compile Include="_pull.php" />
+    <Compile Include="_showings.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bootstrap\" />
+    <Folder Include="bootstrap\css\" />
+    <Folder Include="bootstrap\fonts\" />
+    <Folder Include="bootstrap\js\" />
+    <Folder Include="css\" />
+    <Folder Include="fonts\" />
+    <Folder Include="images\" />
+    <Folder Include="js\" />
+    <Folder Include="apk\" />
+    <Folder Include="src\" />
+    <Folder Include="src\Parse\" />
+    <Folder Include="src\Parse\Internal\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin.html" />
+    <Content Include="apk\SwaziFlicks-v3.apk" />
+    <Content Include="bootstrap\css\bootstrap-theme.css" />
+    <Content Include="bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="bootstrap\css\bootstrap.min.css" />
+    <Content Include="bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="bootstrap\js\bootstrap.min.js" />
+    <Content Include="css\bootstrap-theme.css.map" />
+    <Content Include="css\bootstrap-theme.min.css" />
+    <Content Include="css\bootstrap.css.map" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\jquery-ui-timepicker-addon.min.css" />
+    <Content Include="css\jquery-ui.min.css" />
+    <Content Include="css\jquery-ui.structure.css" />
+    <Content Include="css\jquery-ui.theme.css" />
+    <Content Include="css\rhinoslider-1.05.css" />
+    <Content Include="css\security.css" />
+    <Content Include="css\toastr.min.css" />
+    <Content Include="fbChat.html" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="images\apk.png" />
+    <Content Include="images\ias.png" />
+    <Content Include="images\poster.jpg" />
+    <Content Include="images\rhinoslider-sprite.png" />
+    <Content Include="images\theSwazi.ico" />
+    <Content Include="images\theSwazi.png" />
+    <Content Include="index.html" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\easing.js" />
+    <Content Include="js\global.js" />
+    <Content Include="js\jquery-1.11.2.min.js" />
+    <Content Include="js\cinemas.js" />
+    <Content Include="js\jquery-ui-sliderAccess.js" />
+    <Content Include="js\jquery-ui-timepicker-addon.min.js" />
+    <Content Include="js\jquery-ui.min.js" />
+    <Content Include="js\moment.min.js" />
+    <Content Include="js\mousewheel.js" />
+    <Content Include="js\movies.js" />
+    <Content Include="js\parse.js" />
+    <Content Include="js\prices.js" />
+    <Content Include="js\pull.js" />
+    <Content Include="js\security.js" />
+    <Content Include="js\showings.js" />
+    <Content Include="js\toastr.min.js" />
+    <Content Include="Mlungisi.html" />
+  </ItemGroup>
+</Project>

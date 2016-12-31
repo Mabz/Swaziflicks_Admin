@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>SwaziFlicks - Facebook Chat</title>
+</head>
+<body>
+    <div id="fb-root"></div>
+    <div id="chat">
+        <script>
+            var lobby = 'https://www.facebook.com/theswazi?hc_location=timeline/swaziflicks';
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&appId=853743578011149&version=v2.0";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+            var div = document.createElement('div');
+            div.setAttribute('class', 'fb-comments');
+            div.setAttribute('data-href', lobby);
+            div.setAttribute('data-width', '400');
+            div.setAttribute('data-order-by', 'social');
+            div.setAttribute('data-numposts', '7');
+            div.setAttribute('data-colorscheme', 'light');
+            document.body.appendChild(div);
+        </script>
+    </div>
+</body>
+</html>
