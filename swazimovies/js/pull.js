@@ -107,12 +107,14 @@ function saveMovie() {
                                         movie.save();
 
                                         // Link Actors
-                                        Array = actors.split(", ");
-                                        linkRelation("Actors", "Actor", Array, movie);
+
+                                        thisArray = actors.split(", ");
+                                        linkRelation("Actors", "Actor", thisArray, movie);
 
                                         // Link Genres
-                                        Array = genres.split(", ");
-                                        linkRelation("Genres", "Genre", Array, movie);
+
+                                        thisArray = genres.split(", ");
+                                        linkRelation("Genres", "Genre", thisArray, movie);
 
                                         success("Saved");
 
@@ -267,7 +269,7 @@ function getMoviePoster(imdbID) {
 
     $.ajax({
         type: "GET",
-        url: "http://api.themoviedb.org/3/movie/" + imdbID + "/images?api_key=def7b4e01fd51325dfafea6bd3c2e90a",
+        url: "http://api.themoviedb.org/3/movie/" + imdbID + "/images?api_key=def7b4e01fd51325dfafea6bd3c2e90a&language=en",
         datatype: "json",
         success: function (data) {
             $.each(data.posters, function (i, poster) {
